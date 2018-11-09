@@ -1,0 +1,90 @@
+/* @charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 2
+   
+   Save your Fork Graphic Design Styles
+   Author: Patrick M. Capuano
+   Date:   11/9/18
+
+   Filename: sf_effects.css
+
+*/
+
+/* Body Header Styles */
+body {
+    filter: drop-shadow(10px 10px 50px rgb(51, 51, 51));
+}
+
+/* Here the whole body is changed to have a drop shadow that goes of both the left and right side by ten pixels with a blur of fifthty pixels and a color the resembles are dark shade of gray. */
+
+/* Navigation Tabs List Styles */
+
+body>header nav.tabs {
+    background-image: url("sf_back1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* In all navigation tabs with a class of "tabs" as well nested inside the body's header have the background image "sf_back1.png" being centered, coving the whole area and not repeating in layout. */
+
+/* In all direct */
+
+body>header nav.tabs li {
+    transform: perspective(50px) rotateX(20deg);
+}
+
+/* All list items within the nav having the class of "tabs" and being nested within the body header have all their perspectives altered by fifthty pixels, and rotated by 20 degrees across the X axis. */
+
+body>header nav.tabs li:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+/* All of the above that are now set to the "hover" psuedo style are given the background color of the body when the cursor is held above these list items. */
+
+/* Left Section Styles */
+
+section#left nav.vertical {
+    border: 1px solid rgb(20, 167, 170);
+    border-radius: 25px;
+}
+
+/* All navs with the "vertical" class nested in the section with the ID of "left" are to have their border be one pixel long solid blue streak with rounded corners of a radius that is twenty five pixels long. */
+
+section#left h1 {
+    border-radius: 25px;
+}
+
+/* All h1 headings in the left section are stated here to have rounded corners with a twenty five pixel radius. */
+
+/* Center Article Styles */
+
+section#center article {
+    background: radial-gradient(at center 30%, white, rgb(151, 151, 151));
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgb(51, 51, 51);
+}
+
+/* The article within the section that has an ID of "center" have a radial gradient as their background that starts at the center and ends after thirty percent of progression into the element with a white color that transitions fully into the same color as the rest of the element. Additonally, there is a one pixel solid border of gray added in with rounded corners done with a border radius of fifty pixels and a box shadow that offsets both sides with ten pixels, blures with twenty pixels, and does so with a shade of black */
+
+/* Blockquote Styles */
+
+blockquote {
+    background-image: url("sf_speech.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(5px 5px 10px rgb(51, 51, 51));
+}
+
+/* In the blockquote, the background is the image "sf_speech.png" with a background size of one hundred on both sides, a centered position, no repeating, and a drop shadow five pixels on both sides while bluring with ten pixels in the black shade of color. */
+
+cite img {
+    border-radius: 50%;
+}
+
+/* Lastly, the images under the citations are made to have border radius of fifty percent and as such are given repsective rounded corners. */
